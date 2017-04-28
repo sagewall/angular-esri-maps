@@ -4,19 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+
 import { EsriMapComponent } from './esri-map/esri-map.component';
 
 import { EsriLoaderService } from 'angular2-esri-loader';
+import { EsriSceneComponent } from './esri-scene/esri-scene.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EsriMapComponent
+    EsriMapComponent,
+    EsriSceneComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [
     EsriLoaderService
