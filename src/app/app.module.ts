@@ -11,13 +11,15 @@ import { EsriMapComponent } from './esri-map/esri-map.component';
 import { EsriLoaderService } from 'angular2-esri-loader';
 import { EsriSceneComponent } from './esri-scene/esri-scene.component';
 import { HomeComponent } from './home/home.component';
+import { EsriWebMapComponent } from './esri-web-map/esri-web-map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EsriMapComponent,
     EsriSceneComponent,
-    HomeComponent
+    HomeComponent,
+    EsriWebMapComponent
   ],
   imports: [
     BrowserModule,
